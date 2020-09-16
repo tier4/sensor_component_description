@@ -7,7 +7,7 @@ sensor_kit_base_link2velodyne_front_base_link:
   yaw: 0.0
 sensor_kit_base_link2livox_front_left_base_link:
   x: 1.054
-  y: -0.260
+  y: 0.260
   z: 0.0
   roll: 0.0
   pitch: 0.0
@@ -21,7 +21,7 @@ sensor_kit_base_link2livox_front_center_base_link:
   yaw: 0.0
 sensor_kit_base_link2livox_front_right_base_link:
   x: 1.054
-  y: 0.260
+  y: -0.260
   z: 0.0
   roll: 0.0
   pitch: 0.0
