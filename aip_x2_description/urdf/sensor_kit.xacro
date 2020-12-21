@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:macro name="sensor_kit_macro" params="parent x y z roll pitch yaw">
+
+    <!-- <xacro:property name="pi" value="3.1415926835897931"/> -->
+    <xacro:arg name="gpu" default="false"/>
+    <xacro:arg name="config_dir" default="$(find aip_x2_description)"/>
+
+    <xacro:property name="sensor_kit_base_link" default="sensor_kit_base_link"/>
+
+    <joint name="${sensor_kit_base_link}_joint" type="fixed">
+      <origin rpy="${roll} ${pitch} ${yaw}" xyz="${x} ${y} ${z}"/>
+      <parent link="${parent}"/>
+      <child link="${sensor_kit_base_link}"/>
+    </joint>
+    <link name="${sensor_kit_base_link}">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </link>
+
+    <!-- sensor -->
+    <xacro:property name="calibration" value="${load_yaml('$(arg config_dir)/sensor_kit_calibration.yaml')}"/>
+    <!-- lidar -->
+
+    <joint name="Pandar40P_joint" type="fixed">
+      <origin rpy="${calibration['sensor_kit_base_link2Pandar40P']['roll']} ${calibration['sensor_kit_base_link2Pandar40P']['pitch']} ${calibration['sensor_kit_base_link2Pandar40P']['yaw']}" xyz="${calibration['sensor_kit_base_link2Pandar40P']['x']} ${calibration['sensor_kit_base_link2Pandar40P']['y']} ${calibration['sensor_kit_base_link2Pandar40P']['z']}"/>
+      <parent link="${sensor_kit_base_link}"/>
+      <child link="Pandar40P"/>
+    </joint>
+    <link name="Pandar40P">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </link>
+
+    <joint name="gps_joint" type="fixed">
+      <origin rpy="${calibration['sensor_kit_base_link2gps']['roll']} ${calibration['sensor_kit_base_link2gps']['pitch']} ${calibration['sensor_kit_base_link2gps']['yaw']}" xyz="${calibration['sensor_kit_base_link2gps']['x']} ${calibration['sensor_kit_base_link2gps']['y']} ${calibration['sensor_kit_base_link2gps']['z']}"/>
+      <parent link="${sensor_kit_base_link}"/>
+      <child link="gps"/>
+    </joint>
+    <link name="gps">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </link>
+
+    <joint name="imu_joint" type="fixed">
+      <origin rpy="${calibration['sensor_kit_base_link2imu']['roll']} ${calibration['sensor_kit_base_link2imu']['pitch']} ${calibration['sensor_kit_base_link2imu']['yaw']}" xyz="${calibration['sensor_kit_base_link2imu']['x']} ${calibration['sensor_kit_base_link2imu']['y']} ${calibration['sensor_kit_base_link2imu']['z']}"/>
+      <parent link="${sensor_kit_base_link}"/>
+      <child link="imu"/>
+    </joint>
+    <link name="imu">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </link>
+
+  </xacro:macro>
+
+</robot>
