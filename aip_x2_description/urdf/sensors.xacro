@@ -14,7 +14,7 @@
   <xacro:front_unit_macro parent="base_link" x="${calibration['base_link2front_unit_base_link']['x']}" y="${calibration['base_link2front_unit_base_link']['y']}" z="${calibration['base_link2front_unit_base_link']['z']}" roll="${calibration['base_link2front_unit_base_link']['roll']}" pitch="${calibration['base_link2front_unit_base_link']['pitch']}" yaw="${calibration['base_link2front_unit_base_link']['yaw']}" />
 
   <!-- rear -->
-  <xacro:include filename="rear_unit.xacro"/>
-  <xacro:rear_unit_macro parent="base_link" x="${calibration['base_link2rear_unit_base_link']['x']}" y="${calibration['base_link2rear_unit_base_link']['y']}" z="${calibration['base_link2rear_unit_base_link']['z']}" roll="${calibration['base_link2rear_unit_base_link']['roll']}" pitch="${calibration['base_link2rear_unit_base_link']['pitch']}" yaw="${calibration['base_link2rear_unit_base_link']['yaw']}" />
+  <!-- <xacro:include filename="rear_unit.xacro"/>
+  <xacro:rear_unit_macro parent="base_link" x="${calibration['base_link2rear_unit_base_link']['x']}" y="${calibration['base_link2rear_unit_base_link']['y']}" z="${calibration['base_link2rear_unit_base_link']['z']}" roll="${calibration['base_link2rear_unit_base_link']['roll']}" pitch="${calibration['base_link2rear_unit_base_link']['pitch']}" yaw="${calibration['base_link2rear_unit_base_link']['yaw']}" /> -->
 
 </robot>
