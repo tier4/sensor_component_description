@@ -69,8 +69,8 @@ sensor_kit_base_link2pandar_qt_right_base_link:
   pitch: 0.0
   yaw: 3.1415
 sensor_kit_base_link2gnss_left:
-  x: -0.015
-  y: 0.31
+  x: -0.355
+  y: 0.374
   z: 0.0065
   roll: 0.0
   pitch: 0.0

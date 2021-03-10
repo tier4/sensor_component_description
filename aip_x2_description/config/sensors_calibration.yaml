@@ -6,16 +6,16 @@ base_link2sensor_kit_base_link:
   pitch: 0.0
   yaw: 0.0
 base_link2front_unit_base_link:
-  x: 4.0
+  x: 4.05
   y: 0.0
-  z: 0.75
+  z: 0.70
   roll: 0.0
   pitch: 0.0
   yaw: 0.0
 base_link2rear_unit_base_link:
   x: -1.0
   y: 0.0
-  z: 0.75
+  z: 0.70
   roll: 0.0
   pitch: 0.0
   yaw: 3.1415
