@@ -4,9 +4,8 @@
     <xacro:include filename="$(find pandar_description)/urdf/pandar_40p.xacro"/>
     <xacro:include filename="$(find pandar_description)/urdf/pandar_qt.xacro"/>
 
-    <!-- <xacro:property name="pi" value="3.1415926835897931"/> -->
     <xacro:arg name="gpu" default="false"/>
-    <xacro:arg name="config_dir" default="$(find aip_x2_description)"/>
+    <xacro:arg name="config_dir" default="$(find aip_x2_description)/config"/>
 
     <xacro:property name="front_unit_base_link" default="front_unit_base_link"/>
 
