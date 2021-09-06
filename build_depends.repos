@@ -3,3 +3,11 @@ repositories:
     type: git
     url: https://github.com/tier4/velodyne_simulator.git
     version: ros2
+  vendor/livox-driver:
+    type: git
+    url: https://github.com/tier4/livox_ros2_driver.git
+    version: tier4/master
+  vendor/velodyne_vls:
+    type: git
+    url: https://github.com/tier4/velodyne_vls.git
+    version: ros2
