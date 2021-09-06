@@ -1,4 +1,8 @@
 repositories:
+  autoware/autoware.iv:
+    type: git
+    url: git@github.com:tier4/autoware.iv.git
+    version: main
   description/sensor/velodyne_simulator:
     type: git
     url: https://github.com/tier4/velodyne_simulator.git
