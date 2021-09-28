@@ -23,8 +23,8 @@
       <inertial>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <mass value="${mass}"/>
-        <inertia ixx="${(sensor_box*sensor_box+sensor_box*sensor_box)*mass/12.0}" ixy="0.0" ixz="0.0" 
-                 iyy="${(sensor_box*sensor_box+sensor_box*sensor_box)*mass/12.0}" iyz="0.0" 
+        <inertia ixx="${(sensor_box*sensor_box+sensor_box*sensor_box)*mass/12.0}" ixy="0.0" ixz="0.0"
+                 iyy="${(sensor_box*sensor_box+sensor_box*sensor_box)*mass/12.0}" iyz="0.0"
                  izz="${(sensor_box*sensor_box+sensor_box*sensor_box)*mass/12.0}"/>
       </inertial>
       <!-- <collision>
