@@ -32,6 +32,8 @@
 #  POSSIBILITY OF SUCH DAMAGE.
 # ********************************************************************
 
+# cspell:ignore Dataspeed
+
 import os
 
 from ament_index_python.packages import get_package_share_directory
@@ -64,7 +66,7 @@ def generate_launch_description():
     declare_organize_cloud_cmd = DeclareLaunchArgument(
         "organize_cloud",
         default_value="False",
-        description="Organize PointCloud2 into 2D array with NaN placeholders, otherwise 1D array and leave out invlaid points",
+        description="Organize PointCloud2 into 2D array with NaN placeholders, otherwise 1D array and leave out invalid points",
     )
     gpu = LaunchConfiguration("gpu")
     organize_cloud = LaunchConfiguration("organize_cloud")
