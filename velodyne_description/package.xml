@@ -2,9 +2,7 @@
 <package format="3">
   <name>velodyne_description</name>
   <version>2.0.2</version>
-  <description>
-    URDF and meshes describing Velodyne laser scanners.
-  </description>
+  <description>URDF and meshes describing Velodyne laser scanners.</description>
 
   <license>BSD</license>
   <author>Kevin Hallenbeck</author>
@@ -22,5 +20,4 @@
   <export>
     <build_type>ament_cmake</build_type>
   </export>
-
 </package>

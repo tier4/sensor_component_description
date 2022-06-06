@@ -4,7 +4,7 @@
     <joint name="${name}_base_mount_joint" type="fixed">
       <origin rpy="${roll} ${pitch} ${yaw}" xyz="${x} ${y} ${z}"/>
       <parent link="${parent}"/>
-      <child  link="${name}_base_link"/>
+      <child link="${name}_base_link"/>
     </joint>
 
     <link name="${name}_base_link">
@@ -31,16 +31,14 @@
           <cylinder length="0.044" radius="0.059"/>
         </geometry>
         <origin xyz="0 0 0.094" rpy="0 0 0"/>
-        <material name="gray">
-        </material>
+        <material name="gray"/>
       </visual>
       <visual>
         <geometry>
           <cylinder length="0.030" radius="0.010"/>
         </geometry>
         <origin xyz="0.0 0.059 0.010" rpy="1.57 0 0"/>
-        <material name="gray">
-        </material>
+        <material name="gray"/>
       </visual>
       <inertial>
         <mass value="0.0"/>
@@ -48,9 +46,9 @@
         <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
       </inertial>
     </link>
-    <joint name="${name}_base_scan_joint" type="fixed" >
-      <origin xyz="0 0 0.047" rpy="0 0 0" />
-      <parent link="${name}_base_link" />
+    <joint name="${name}_base_scan_joint" type="fixed">
+      <origin xyz="0 0 0.047" rpy="0 0 0"/>
+      <parent link="${name}_base_link"/>
       <child link="${name}"/>
     </joint>
     <link name="${name}">
