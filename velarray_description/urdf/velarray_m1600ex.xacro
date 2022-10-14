@@ -34,8 +34,8 @@
       </collision> -->
     </link>
     <joint name="${name}_base_scan_joint" type="fixed">
-      <!-- NOTE: optical center is actually difference from the base_link in x/y direction -->
-      <origin xyz="0 0 0.0275" rpy="0 0 0" />
+      <!-- NOTE: base_link is described as "DATUM A" in datasheet -->
+      <origin xyz="0.04972 -0.03619 0.0275" rpy="0 0 0" />
       <parent link="${name}_base_link" />
       <child link="${name}"/>
     </joint>
