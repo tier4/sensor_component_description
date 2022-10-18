@@ -33,8 +33,9 @@
         </geometry>
       </collision> -->
     </link>
+    <!-- base_link is the bottom of the optical center -->
     <joint name="${name}_base_scan_joint" type="fixed">
-      <origin xyz="0.04972 -0.03619 0.0275" rpy="0 0 0" />
+      <origin xyz="0.0 0.0 0.0275" rpy="0 0 0" />
       <parent link="${name}_base_link" />
       <child link="${name}"/>
     </joint>
