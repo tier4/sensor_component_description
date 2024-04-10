@@ -6,10 +6,10 @@
     <joint name="${name}_base_mount_joint" type="fixed">
       <origin rpy="${roll} ${pitch} ${yaw}" xyz="${x} ${y} ${z}"/>
       <parent link="${parent}"/>
-      <child link="${name}_base_link"/>
+      <child link="${name}"/>
     </joint>
 
-    <link name="${name}_base_link">
+    <link name="${name}">
       <visual>
         <geometry>
           <box size="0.03 0.1 0.1"/>
