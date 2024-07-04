@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
 <robot name="pandar_qt128" xmlns:xacro="http://ros.org/wiki/xacro">
-
   <!-- Define materials -->
   <material name="gray_material">
     <color rgba="0.9 0.9 0.9 1.0"/>
